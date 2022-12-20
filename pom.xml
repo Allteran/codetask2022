@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.allteran</groupId>
-    <artifactId>task1</artifactId>
+    <artifactId>codetask2022</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>task1</name>
-    <description>task1</description>
+    <name>codetask2022</name>
+    <description>codetask2022</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -24,6 +24,19 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+
+        <!--Apache POI for xslx-files-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.2.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.2</version>
         </dependency>
 
         <dependency>

@@ -1,10 +1,10 @@
-package io.allteran.task1;
+package io.allteran.codetask2022;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Task1ApplicationTests {
+class Codetask2022ApplicationTests {
 
     @Test
     void contextLoads() {
