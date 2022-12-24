@@ -22,7 +22,7 @@ public class Task1Controller {
     }
 
     @GetMapping("/download-table")
-    public HttpEntity<ByteArrayResource> main() {
+    public HttpEntity<ByteArrayResource> downloadTable() {
         String response = webClientBuilder.build().get()
                 .uri(URI_TASK1)
                 .retrieve()
