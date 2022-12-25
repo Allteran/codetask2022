@@ -6,7 +6,6 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,8 +31,8 @@ public class Task2Controller {
     }
 
     @SneakyThrows
-    @GetMapping(value = "/get-info", produces = MediaType.APPLICATION_OCTET_STREAM_VALUE)
-    public ResponseEntity<String> getInfo() {
+    @GetMapping(value = "/print-info")
+    public ResponseEntity<String> printInfo() {
         String htmlBody = webClientBuilder.build().get()
                 .uri(URI_EL_IMBALANCE)
                 .retrieve()

@@ -1,10 +1,6 @@
 package io.allteran.codetask2022.controller;
 
-import io.allteran.codetask2022.util.ResponseDecorator;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.codec.ResourceDecoder;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,7 +35,7 @@ public class Task3Controller {
 //                }))
 
         RestTemplate restTemplate = new RestTemplate();
-        ResponseEntity<String> response = restTemplate.getForEntity(URI_TASK3, String.class);
+        ResponseEntity<String > response = restTemplate.getForEntity(URI_TASK3, String.class);
 
         return response;
     }
