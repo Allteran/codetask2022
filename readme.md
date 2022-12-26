@@ -7,4 +7,6 @@ To print actual value according to task - just make GET-request to the ```localh
 ### Task 4: get maximum sustained wind-speed of storm for specific years for storms that ends with 'A'  
 You can get info in 2 ways: print it to console and get it in TXT-file  
 * ```localhost:8080/task4/print-info``` - make simple GET-request, if you want to get info to the console  
-* ```localhost:8080/task4/download-info``` - GET-request here will download TXT file with same data as in first case
+* ```localhost:8080/task4/download-info``` - GET-request here will download TXT file with same data as in first case  
+### Task 5: make SQL queries  
+All SQL queries for task are located in ```/src/main/resources/task5.sql```.
